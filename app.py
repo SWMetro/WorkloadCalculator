@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(
-    page_title="Evaluator Workload Calculator",
+    page_title="Special Education Case Manager Workload Calculator",
     page_icon="📊",
     layout="wide"
 )
