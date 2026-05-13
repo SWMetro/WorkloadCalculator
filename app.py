@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Special Educaiton Case Manager Workload Calculator")
+st.title("📊 Special Education Case Manager Workload Calculator")
 st.caption("Estimate annual workload, contract overage, and remote-capable vs. in-person duties.")
 
 # -----------------------------
@@ -222,3 +222,5 @@ st.text_area("Summary", summary_text, height=320)
 # Notes
 # -----------------------------
 st.caption("Note: This calculator provides an estimate based on user-entered assumptions. Actual workload may vary depending on student needs, timelines, compliance requirements, meeting complexity, and district procedures.")
+st.markdown("---")
+st.caption("Special Education Case Manager Workload Calculator © 2026 Nate Green")
