@@ -50,8 +50,14 @@ progress_reports_per_student = st.sidebar.number_input("Progress Reports per Stu
 progress_report_minutes = st.sidebar.selectbox(
     "Minutes per Progress Report",
     options=[0, 15, 30, 45, 60, 75, 90],
-    index=2
-)
+    index=2)
+
+st.sidebar.header("Other Duties")
+other_duties_hours = st.sidebar.number_input(
+    "Other Duties Hours",
+    min_value=0.0,
+    value=0.0,
+    step=1.0)
 
 # -----------------------------
 # Calculations
@@ -77,10 +83,10 @@ in_person_total = academic_testing + observations
 
 progress_report_total = (caseload * progress_reports_per_student * progress_report_minutes) / 60
 
-total_without_progress = iep_work + evaluation_work + communication_total + in_person_total
+total_without_progress = iep_work + evaluation_work + communication_total + in_person_total + other_duties_hours
 total_with_progress = total_without_progress + progress_report_total
 
-remote_without_progress = iep_work + evaluation_work + communication_total
+remote_without_progress = iep_work + evaluation_work + communication_total + other_duties_hours
 remote_with_progress = remote_without_progress + progress_report_total
 
 over_without_progress = total_without_progress - contracted_hours
