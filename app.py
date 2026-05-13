@@ -36,7 +36,7 @@ evaluation_hours = st.sidebar.number_input("Hours per Evaluation", min_value=0.0
 st.sidebar.header("Communication")
 family_minutes = st.sidebar.number_input("Family Minutes per Student per Week", min_value=0.0, value=5.0, step=0.5)
 staff_minutes = st.sidebar.number_input("Staff Minutes per Student per Week", min_value=0.0, value=3.0, step=0.5)
-communication_weeks = st.sidebar.number_input("Communication Weeks", min_value=0, value=18, step=1)
+communication_weeks = st.sidebar.number_input("Communication Weeks", min_value=0, value=36, step=1)
 other_communication_hours = st.sidebar.number_input("Other Communication Hours", min_value=0.0, value=0.0, step=1.0)
 
 st.sidebar.header("In-Person Work")
