@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Evaluator Workload Calculator")
+st.title("📊 Special Educaiton Case Manager Workload Calculator")
 st.caption("Estimate annual workload, contract overage, and remote-capable vs. in-person duties.")
 
 # -----------------------------
